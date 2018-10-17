@@ -1,0 +1,16 @@
+<div>
+  <div *ngFor="let event of events" class="well hoverwell thumbnail">
+    <h2>{{ event.name }}</h2>
+    <span class="label label-warning">Solo en línea</span>
+    <div>Fecha: {{ event.date }}</div>
+    <div>Hora: {{ event.time }}</div>
+    <div>
+      <span>Ubicación: {{ event?.location?.address }}</span>
+      <span class="pad-left">{{ event?.location?.city }}, {{ event?.location?.country }}</span>
+    </div>
+    <div>
+      Url en línea: {{ event?.onlineUrl }}
+    </div>
+  </div>
+
+</div>
