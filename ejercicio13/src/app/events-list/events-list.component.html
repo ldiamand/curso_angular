@@ -1,0 +1,20 @@
+<div>
+  <div class="legend">
+    <span class="in-person">En Persona</span>
+    <span class="online">En línea</span>
+    <span class="tbd">TBD</span>
+  </div>
+  <div *ngFor="let event of events" class="well hoverwell thumbnail">
+    <h2>{{ event.name }}</h2>
+    <div>Fecha: {{ event.date }}</div>
+    <div>Hora: {{ event.time }}</div>
+    <div *ngIf="event.location">
+      <span>Ubicación: {{ event?.location?.address }}</span>
+      <span class="pad-left">{{ event?.location?.city }}, {{ event?.location?.country }}</span>
+    </div>
+    <div *ngIf="event.onlineUrl">
+      Url en línea: {{ event?.onlineUrl }}
+    </div>
+  </div>
+
+</div>
