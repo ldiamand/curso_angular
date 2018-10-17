@@ -1,0 +1,16 @@
+<div>
+  <div *ngFor="let event of events" class="well hoverwell thumbnail">
+    <h2>{{ event.name }}</h2>
+    <button class="btn btn-warning" (click)="event.hidden=true">Colapsar</button>
+    <button class="btn btn-warning" (click)="event.hidden=false">Expandir</button>
+    <div>
+      <div>Fecha: {{ event.date }}</div>
+      <div>Hora: {{ event.time }}</div>
+      <div>
+        <span>Ubicación: {{ event?.location?.address }}</span>
+        <span class="pad-left">{{ event?.location?.city }}, {{ event?.location?.country }}</span>
+      </div>
+    </div>
+  </div>
+
+</div>
