@@ -1,0 +1,11 @@
+<h4>Event Details</h4>
+   <div>
+    <div>Event: {{event?.name}}</div>
+    <div>Date: {{event?.date}} </div>      
+    <div>Time: {{event?.time}}</div>
+    <div>Address: {{event?.location.address}}, {{event?.location.city}}, {{event?.location.country}}</div>
+   </div>
+   <div class="back">
+     <a [routerLink]="['/events']">< Back to events</a>
+   </div>
+   
