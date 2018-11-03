@@ -1,0 +1,22 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Evento</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Dirección</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <td>{{event.name}}</td>
+        <td>{{event.date}} </td>
+        <td>{{event.time}}</td>
+        <td>{{event.location.address}}, {{event.location.city}}, {{event.location.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a [routerLink]="['/events/new']">Crear un nuevo eventos</a>
+</div>
