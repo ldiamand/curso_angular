@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-parent',
@@ -10,12 +9,12 @@ export class ParentComponent implements OnInit {
 
   movieList;
 
-  constructor(private http: Http) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
   makeRequest() {
-    
+
   }
 }
