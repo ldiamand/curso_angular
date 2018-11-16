@@ -17,7 +17,7 @@ export class ParentComponent implements OnInit {
   }
 
   ngOnInit() {
-    // put code here
+    // ingrese el código aquí
   }
 
   listen() {
@@ -25,5 +25,5 @@ export class ParentComponent implements OnInit {
       this.result = val;
     })
   }
-  
+
 }
