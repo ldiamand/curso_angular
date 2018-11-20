@@ -13,11 +13,11 @@ describe('MovieService', () => {
 
   it('adding a cast member increases the cast member count by one', () => {
     const service: MovieService = TestBed.get(MovieService);
-    let mockService: ActorService;
 
+    let mockActorService;
     // agregamos el codigo aqui
 
-    service.addCastMember('Sylvester', 'Rambo', mockService);
+    service.addCastMember('Sylvester', 'Rambo', mockActorService);
     expect(service.castMembers.length).toBe(1)    
   });
 
