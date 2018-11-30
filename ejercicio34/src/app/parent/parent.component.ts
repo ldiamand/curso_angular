@@ -13,7 +13,7 @@ export class ParentComponent implements OnInit {
     { name:  "Jaws the Revenge", rating: "R" },
     { name:  "Avengers 6 - The Marriage of the Hulk", rating: "PG-13" },
     { name:  "Finding Dory's Grandkids", rating: "G" },
-  ]
+  ];
 
   constructor() { }
 
@@ -22,5 +22,5 @@ export class ParentComponent implements OnInit {
 
   filter(rating) {
   }
-  
+
 }
