@@ -1,0 +1,5 @@
+<h1>Películas</h1>
+    
+<a *ngFor="let movie of movies" [routerLink]="['/movies/', movie.id]" routerLinkActive="active">{{ movie.name }}</a>
+
+<h3>La película actual es &quot;{{ currentMovie.name }} &quot; clasificada {{ currentMovie.rating }}</h3>
