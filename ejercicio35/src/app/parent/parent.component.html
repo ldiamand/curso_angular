@@ -1,0 +1,7 @@
+<h1>Mis Películas Favoritas</h1>
+<div *ngFor="let movie of movies">
+  {{ movie.name }} - {{ movie.rating }}
+</div>
+<div>&nbsp;</div>
+<button class="btn btn-primary" (click)="sortAsc()">Por Clasificación Ascendente</button>
+<button class="btn btn-primary" (click)="sortDesc()">Por Clasificación Descendente</button>
