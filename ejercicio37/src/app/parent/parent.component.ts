@@ -15,7 +15,7 @@ export class ParentComponent implements OnInit {
   }
   
   logMessage() {
-    this.logger.logMessage('this message should appear in the console');
+    this.logger.logMessage('Este mensaje debería aparecer en la consola.');
   }
   
   ngOnInit() {
