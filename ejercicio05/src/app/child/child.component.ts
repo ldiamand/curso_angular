@@ -15,4 +15,7 @@ export class ChildComponent implements OnInit {
     setInterval(() => { this.counter++ }, 1000);
   }
 
+  buttonClicked(): void {
+    
+  }
 }
