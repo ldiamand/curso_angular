@@ -3,10 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-events-list',
   templateUrl: './events-list.component.html',
-  styles: [`
-    .thumbnail { margin-top: 10px; padding-top: 5px; }
-    .label { font-size: 14px; margin-bottom: 10px; display: inline-block; }
-  `]
+  styleUrls: [ './events-list.component.css' ]
 })
 export class EventsListComponent implements OnInit {
 

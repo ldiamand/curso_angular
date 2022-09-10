@@ -3,14 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-events-list',
   templateUrl: './events-list.component.html',
-  styles: [`
-    .legend span { padding-right: 30px; }
-    .in-person { color: green; }
-    .online { color: red; }
-    .tbd { color: #aaa; }
-    .thumbnail { margin-top: 10px; padding-top: 5px; }
-    .label { font-size: 14px; margin-bottom: 10px; display: inline-block; }
-  `]
+  styleUrls: [ './events-list.component.css' ]
 })
 export class EventsListComponent implements OnInit {
 
@@ -34,7 +27,7 @@ export class EventsListComponent implements OnInit {
       format: "Online"
     },
     {
-      name: 'Future Conf (Location/Url TBD)',
+      name: 'Future Conf (Location/Url a determinar)',
       date: '6/10/2037',
       time: '8am'
     },

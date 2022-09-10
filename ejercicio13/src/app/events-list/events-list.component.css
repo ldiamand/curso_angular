@@ -1,0 +1,26 @@
+.legend span {
+    padding-right: 30px;
+}
+
+.in-person {
+    color: green;
+}
+
+.online {
+    color: red;
+}
+
+.adeterminar {
+    color: #aaa;
+}
+
+.thumbnail {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
