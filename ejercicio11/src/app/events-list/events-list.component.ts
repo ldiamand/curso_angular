@@ -3,12 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-events-list',
   templateUrl: './events-list.component.html',
-  styles: [`
-    button { padding: 4px; margin: -10px 0 0 10px; }
-    h2 { display: inline-block; }
-    .thumbnail { margin-top: 10px; padding-top: 5px; }
-    .label { font-size: 14px; margin-bottom: 10px; display: inline-block; }
-  `]
+  styleUrls: [ './events-list.component.css' ]
 })
 export class EventsListComponent implements OnInit {
 
@@ -21,7 +16,8 @@ export class EventsListComponent implements OnInit {
         address: '1 London Road ',
         city: 'London',
         country: 'England'
-      }
+      },
+      hidden: true
     },
     {
       name: 'ng-conf 2037',
@@ -31,7 +27,8 @@ export class EventsListComponent implements OnInit {
         address: 'The Palatial America Hotel',
         city: 'Salt Lake City',
         country: 'USA'
-      }
+      },
+      hidden: true
     },
     {
       name: 'UN Angular Summit',
@@ -42,7 +39,8 @@ export class EventsListComponent implements OnInit {
         city: 'New York',
         country: 'USA'
       },
-      onlineUrl: 'http://unangularsummit.org'
+      onlineUrl: 'http://unangularsummit.org',
+      hidden: true
     }
   ]
 
