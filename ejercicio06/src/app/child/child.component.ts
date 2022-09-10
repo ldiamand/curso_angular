@@ -7,18 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  private stopped = false;
-  private counter = 0;
-  private intervalId;
+  stopped = false;
+  counter = 0;
+  private intervalId: NodeJS.Timeout;
   
   constructor() { }
   
   ngOnInit() {
     this.intervalId = setInterval(() => { this.counter++ }, 1000);
   }
-  
+
   stopTimer() {
     clearInterval(this.intervalId);
     this.stopped = true;
   }
+
 }
