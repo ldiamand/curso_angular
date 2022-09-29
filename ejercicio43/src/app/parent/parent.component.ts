@@ -9,21 +9,22 @@ import { Subject } from 'rxjs';
 export class ParentComponent implements OnInit {
 
   subject;
-  output = [];
+  output: string[] = [];
   
   constructor() {
     this.subject = new Subject();
-   }
+  }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.subject
     .subscribe(key => {
       this.output.push(key);
     });
   }
 
-  keypress(e) {
+  keypress(e: any): void {
     this.subject.next(e.key);
   }
   
 }
+
