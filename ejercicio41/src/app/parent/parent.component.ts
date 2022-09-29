@@ -9,21 +9,21 @@ import { of } from 'rxjs';
 export class ParentComponent implements OnInit {
 
   obs;
-  result;
-  promise;
+  result: number;
+  promise: Promise<number>;
 
   constructor() { 
     this.obs = of(35);
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     // ingrese el código aquí
   }
 
-  listen() {
+  listen(): void {
     this.promise.then((val) => {
       this.result = val;
-    })
+    });
   }
 
 }
