@@ -20,3 +20,4 @@ import { ParentComponent } from './parent/parent.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

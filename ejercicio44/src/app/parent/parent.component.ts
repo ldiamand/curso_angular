@@ -17,7 +17,8 @@ export class ParentComponent implements OnInit {
   }
 
   makeRequest() {
-    let url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.city + "&APPID=" + this.appid;
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.city + "&APPID=" + this.appid;
   }
 
 }
+
