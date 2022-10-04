@@ -13,3 +13,4 @@ export class ParentComponent implements OnInit {
   }
 
 }
+
