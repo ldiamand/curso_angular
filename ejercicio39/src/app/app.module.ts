@@ -14,7 +14,6 @@ import { MoviesComponent } from './movies/movies.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     RouterModule.forRoot([
       {
         path: '',
