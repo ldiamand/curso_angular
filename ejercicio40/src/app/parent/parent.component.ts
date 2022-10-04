@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
   
-  greatest: string;
+  greatest: string = '';
   
   constructor() {
   }
@@ -20,3 +20,4 @@ export class ParentComponent implements OnInit {
   }
 
 }
+
