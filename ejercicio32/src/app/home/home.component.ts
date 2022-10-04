@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  myText = "this title should be in title case";
-  
+  myText = "este título debe estar en mayúsculas y minúsculas";
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
