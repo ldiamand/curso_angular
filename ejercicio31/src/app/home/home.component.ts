@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   theDate = new Date(2035, 3, 1, 14, 15);
-  
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
