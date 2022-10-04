@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  @Input() quantity;
-  squaredQuantity: number;
+  @Input() quantity: number = 0;
+  squaredQuantity: number = 0;
 
   constructor() { }
 

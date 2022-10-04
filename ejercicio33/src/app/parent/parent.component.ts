@@ -17,4 +17,5 @@ export class ParentComponent implements OnInit {
   updateQuantity() {
     this.myQuantity++;
   }
+
 }
