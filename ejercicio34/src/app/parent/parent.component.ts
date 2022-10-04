@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Movie {
+  name: string;
+  rating: string;
+};
+
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
@@ -7,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  movies = [
+  movies: Movie[] = [
     { name:  "Star Wars Episode X", rating: "PG" },
     { name:  "Rocky XV", rating: "PG-13" },
     { name:  "Jaws the Revenge", rating: "R" },
@@ -15,12 +20,15 @@ export class ParentComponent implements OnInit {
     { name:  "Finding Dory's Grandkids", rating: "G" },
   ];
 
+  displayedMovies: Movie[] = [];
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  filter(rating) {
+  filter(rating: string) {
   }
 
 }
+
